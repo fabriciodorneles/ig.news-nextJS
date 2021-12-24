@@ -25,12 +25,29 @@
             color: var(--gray-300);
             transition: color 0.2s;
 
+            & + a {
+                margin-left: 2rem;
+            }
+
             &:hover {
                 color: var(--white);
             }
 
+            &.active {
+                color: var(--white);
+                font-weight: bold;
+            }
+
             &.active::after {
-                color: yellow;
+                content: '';
+                height: 3px;
+                border-radius: 3px 3px 0 0;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: var(--yellow-500);
+                bottom: 1px;
             }
         }
     }
