@@ -6,10 +6,12 @@ export default function Home() {
       <Head>
         <title>Inicio | ig.news</title>
       </Head>    
-      <h1>
-        Hello 
-        <span> World</span>
-       </h1>
+      <div style={{width: '100%', display: 'flex', alignContent:'center', justifyContent:'center'}}>
+        <div style={{display: 'flex', flexDirection:'column', justifyContent:'center', alignContent:'center'}}>
+          <p style={{fontSize:'100px', textAlign:'center'}}> BECOME A </p>   
+          <p style={{fontSize:'300px'}}> GOD </p>   
+        </div>
+      </div>
     </>
   )
 }
